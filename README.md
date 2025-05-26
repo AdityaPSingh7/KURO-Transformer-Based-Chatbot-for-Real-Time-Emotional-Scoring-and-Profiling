@@ -59,6 +59,13 @@ Terminal 2 — run analysis
 ```bash
 python analyse_co.py
 ```
+Outputs:
+
+• Sentiment label
+
+• 28-emotion distribution chart
+
+• Mental-health score
 
 ### Project Structure
 ```bash
