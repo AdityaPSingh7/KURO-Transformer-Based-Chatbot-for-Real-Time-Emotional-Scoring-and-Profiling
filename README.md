@@ -67,7 +67,8 @@ Outputs:
 
 • Mental-health score
 
-### Project Structure
+
+### 🗂️ Project Structure
 ```bash
 KURO/
 ├── my_chatbot/            # Django backend
