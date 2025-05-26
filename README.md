@@ -14,14 +14,15 @@ Now, split termials in two parts:
 
 
 We have modified the goemotions_train.csv and classified into 3 classes (positive, negative and neutral) on basis of:
+      
       positive = ['admiration', 'amusement', 'approval', 'caring', 'curiosity', 'desire',
                   'excitement', 'gratitude', 'joy', 'love', 'optimism', 'pride', 'realization',
                   'relief', 'surprise']
 
-     negative = [ 'anger', 'annoyance', 'confusion', 'disappointment', 'disapproval', 'disgust',
+      negative = [ 'anger', 'annoyance', 'confusion', 'disappointment', 'disapproval', 'disgust',
                   'embarrassment', 'fear', 'grief', 'nervousness', 'remorse', 'sadness' ]
 
-    neutral = ['neutral']
+      neutral = ['neutral']
 
 and created the goemotions_3class.csv on which the DistilBERT model is trained and used along with the pre-trained RoBerta model for analysis
 
