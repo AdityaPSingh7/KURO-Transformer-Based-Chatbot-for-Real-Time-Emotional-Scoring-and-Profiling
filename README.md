@@ -18,14 +18,14 @@ We have modified the goemotions_train.csv and classified into 3 classes (positiv
                   'excitement', 'gratitude', 'joy', 'love', 'optimism', 'pride', 'realization',
                   'relief', 'surprise']
 
-   negative = [
-    'anger', 'annoyance', 'confusion', 'disappointment', 'disapproval', 'disgust',
-    'embarrassment', 'fear', 'grief', 'nervousness', 'remorse', 'sadness'
- ]
+     negative = [ 'anger', 'annoyance', 'confusion', 'disappointment', 'disapproval', 'disgust',
+                  'embarrassment', 'fear', 'grief', 'nervousness', 'remorse', 'sadness' ]
 
-# neutral = ['neutral']
+    neutral = ['neutral']
 
-Thanks for reading, hopw you like it:)
+and created the goemotions_3class.csv on which the DistilBERT model is trained and used along with the pre-trained RoBerta model for analysis
+
+Thanks for reading, hope you like it:)
 
 Feel free to reach out on: www.linkedin.com/in/aditya-pratap-singh-8b901a273
                                             or
