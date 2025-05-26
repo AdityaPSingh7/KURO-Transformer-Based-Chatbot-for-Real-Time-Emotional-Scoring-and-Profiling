@@ -46,5 +46,35 @@ Uses goemotions_3class.csv (mapped from the original GoEmotions):
 | **Neutral**  | neutral                                                                                                                                      |
 
 ### 💬 Run the chatbot
+Terminal 1 — start Django server
+```bash
+cd my_chatbot
+python manage.py runserver
+```
+- Browse to [http://127.0.0.1:8000](http://127.0.0.1:8000)
+- Chat as usual
+- Send `buye` to end the session; log is saved to `read.txt`
+  
+Terminal 2 — run analysis
+```bash
+python analyse_co.py
+```
+
+### Project Structure
+```bash
+KURO/
+├── my_chatbot/            # Django backend
+├── goemotions_train.csv   # Original data
+├── goemotions_3class.csv  # 3-class data
+├── sme.py                 # Training script
+├── analyse_co.py          # Analysis script
+├── requirements.txt       # Dependencies
+├── read.txt               # Chat log
+└── README.md              # This file
+```
+
+### 📬 Contact
+Aditya Pratap Singh • [LinkedIn](www.linkedin.com/in/aditya-pratap-singh-8b901a273)
+ • as441438@gmail.com
 
 
