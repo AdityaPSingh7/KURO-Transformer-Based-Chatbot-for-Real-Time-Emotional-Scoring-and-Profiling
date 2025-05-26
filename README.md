@@ -74,7 +74,7 @@ KURO/
 ```
 
 ### 📬 Contact
-Aditya Pratap Singh • [LinkedIn]([www.linkedin.com/in/aditya-pratap-singh-8b901a273](https://www.linkedin.com/in/aditya-pratap-singh-8b901a273/))
+Aditya Pratap Singh • [LinkedIn](https://www.linkedin.com/in/aditya-pratap-singh-8b901a273/)
  • as441438@gmail.com
 
 
