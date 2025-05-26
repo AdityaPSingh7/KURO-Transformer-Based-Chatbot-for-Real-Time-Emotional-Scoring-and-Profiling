@@ -1,33 +1,88 @@
-# KURO-Transformer-Based-Chatbot-for-Real-Time-Emotional-Scoring-and-Profiling
+# KURO — Transformer-Based Chatbot for Real-Time Emotional Scoring and Profiling
 
---> Create a venv using pip venv command
---> Using requirements.txt download all necessary packages
---> train the DistilBert by executing the sme.py file 
+KURO is a transformer-powered chatbot that supports real-time conversation and post-session emotional analysis.  
+It employs:
 
+- **DistilBERT** fine-tuned for 3-class sentiment (Positive, Negative, Neutral)  
+- **RoBERTa** (`SamLowe/roberta-base-go_emotions`) for 28-label emotion detection  
 
-Now, split termials in two parts:
---> Use one terminal to change directory to /my_chatbot and use 'python manage.py runserver' command to start the Django chat interface
-    ->when you type and send buye, the conversation ends and a read.txt file is generated
-    
---> Use the second terminal to execute analyse_co.py file which will read the read.txt file and give the anaysis
+---
 
+## 🚀 Features
+- Django web chat interface  
+- Automatic chat log (`read.txt`) after each session  
+- Sentiment analysis (DistilBERT)  
+- Emotion classification (RoBERTa)  
+- Mental-health score (0–10)  
+- Emotion-distribution visualization  
 
+---
 
-We have modified the goemotions_train.csv and classified into 3 classes (positive, negative and neutral) on basis of:
-      
-      positive = ['admiration', 'amusement', 'approval', 'caring', 'curiosity', 'desire',
-                  'excitement', 'gratitude', 'joy', 'love', 'optimism', 'pride', 'realization',
-                  'relief', 'surprise']
+## 🛠️ Setup
 
-      negative = [ 'anger', 'annoyance', 'confusion', 'disappointment', 'disapproval', 'disgust',
-                  'embarrassment', 'fear', 'grief', 'nervousness', 'remorse', 'sadness' ]
+### 1  Create & activate virtual environment
+```bash
+python -m venv .venv
+# Windows
+.venv\Scripts\activate
+# macOS / Linux
+source .venv/bin/activate
+2 Install dependencies
+bash
+Copy
+Edit
+pip install -r requirements.txt
+🧪 Train the sentiment model
+bash
+Copy
+Edit
+python sme.py
+Uses goemotions_3class.csv (mapped from the original GoEmotions):
 
-      neutral = ['neutral']
+Class	Labels
+Positive	admiration, amusement, approval, caring, curiosity, desire, excitement, gratitude, joy, love, optimism, pride, realization, relief, surprise
+Negative	anger, annoyance, confusion, disappointment, disapproval, disgust, embarrassment, fear, grief, nervousness, remorse, sadness
+Neutral	neutral
 
-and created the goemotions_3class.csv on which the DistilBERT model is trained and used along with the pre-trained RoBerta model for analysis
+💬 Run the chatbot
+Terminal 1 — start Django server
+bash
+Copy
+Edit
+cd my_chatbot
+python manage.py runserver
+Browse to http://127.0.0.1:8000
 
-Thanks for reading, hope you like it:)
+Chat as usual
 
-Feel free to reach out on: www.linkedin.com/in/aditya-pratap-singh-8b901a273
-                                            or
-                                    as441438@gmail.com
+Send buye to end; log saved to read.txt
+
+Terminal 2 — run analysis
+bash
+Copy
+Edit
+python analyse_co.py
+Outputs:
+
+Sentiment label
+
+28-emotion distribution chart
+
+Mental-health score
+
+🗂️ Project structure
+bash
+Copy
+Edit
+KURO/
+├── my_chatbot/            # Django backend
+├── goemotions_train.csv   # Original data
+├── goemotions_3class.csv  # 3-class data
+├── sme.py                 # Training script
+├── analyse_co.py          # Analysis script
+├── requirements.txt       # Dependencies
+├── read.txt               # Chat log
+└── README.md              # This file
+📬 Contact
+Aditya Pratap Singh
+LinkedIn • as441438@gmail.com
