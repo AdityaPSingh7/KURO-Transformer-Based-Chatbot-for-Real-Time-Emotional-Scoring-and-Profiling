@@ -54,7 +54,10 @@ python manage.py runserver
 - Browse to [http://127.0.0.1:8000](http://127.0.0.1:8000)
 - Chat as usual
 - Send `bye` to end the session; log is saved to `read.txt`
-  
+
+![image](https://github.com/user-attachments/assets/f451422b-2e1c-4e12-8eaf-3517caa6bdd6)
+
+
 Terminal 2 — run analysis
 ```bash
 python analyse_co.py
@@ -64,6 +67,10 @@ Outputs:
 • 28-emotion distribution chart
 
 • Emotional/Mood score
+
+
+![image](https://github.com/user-attachments/assets/b2b5a547-01e8-4156-9355-927a546ef835)
+
 
 
 ### 🗂️ Project Structure
