@@ -61,11 +61,9 @@ python analyse_co.py
 ```
 Outputs:
 
-• Sentiment label
-
 • 28-emotion distribution chart
 
-• Mental-health score
+• Emotional/Mood score
 
 
 ### 🗂️ Project Structure
