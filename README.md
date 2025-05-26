@@ -53,7 +53,7 @@ python manage.py runserver
 ```
 - Browse to [http://127.0.0.1:8000](http://127.0.0.1:8000)
 - Chat as usual
-- Send `buye` to end the session; log is saved to `read.txt`
+- Send `bye` to end the session; log is saved to `read.txt`
   
 Terminal 2 — run analysis
 ```bash
